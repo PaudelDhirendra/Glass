@@ -11534,8 +11534,10 @@ section#contact {
 }
 
 .service-11 .card.card-shadow {
-    -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
-    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+    -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(20px);
 }
 
 .service-11 .wrap-service11-box {
@@ -11548,7 +11550,9 @@ section#contact {
 
 .service-11 .wrap-service11-box .icon-space .icon-round {
   font-size: 45px;
-  color: #ffffff;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
 }
 
 .service-11 .icon-round {
@@ -11612,4 +11616,11 @@ footer::before {
   z-index: -1;
   -webkit-filter: blur(20px);
   filter: blur(20px);
+}
+#wrap-service11-box {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(20px);
 }
